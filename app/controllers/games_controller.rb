@@ -9,8 +9,7 @@ class GamesController < ApplicationController
 
   def score
     @result = params[:word]
-    binding.pry
-    test(@result, @letters)
+    test(@result, params[:letters])
   end
 
   def included?(guess, grid)
@@ -25,7 +24,6 @@ class GamesController < ApplicationController
 
   def test(guess, grid)
     if included?(guess, grid)
-      binding.pry
       if english_word?(guess)
         @score = guess.chars.length
       else
