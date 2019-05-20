@@ -1,0 +1,16 @@
+// Place all the styles related to the Games controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+li {
+  display: inline;
+  color: white;
+  background-color: blue;
+  list-style: none;
+  padding: 20px;
+  margin: 5px;
+}
+
+.submit_word {
+  margin: 50px;
+}
